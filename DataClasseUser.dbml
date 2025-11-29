@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BDPeluqueria" Class="DataClasseUserDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=a306-15\PRG3SQL;Initial Catalog=BDPeluqueria;User ID=sa;Encrypt=False" SettingsObjectName="Peluqueria.Properties.Settings" SettingsPropertyName="BDPeluqueriaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.usuario" Member="usuario">
+    <Type Name="usuario">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_empleado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="usuario_login" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contrasena" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="cargo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
